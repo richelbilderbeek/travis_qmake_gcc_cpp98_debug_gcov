@@ -26,6 +26,8 @@
 *.exe
 *.out
 *.app
+
+# Misc
 *.gcda
 Makefile
 *.gcov
@@ -33,6 +35,5 @@ Makefile
 *.gcno
 *qmake_gcov
 *.pro.user
-travis_qmake_gcc_cpp98_gcov
-travis_qmake_gcc_cpp98_gcov
-travis_qmake_gcc_cpp98_gcov_gcov
+travis_qmake_gcc_cpp98_debug_gcov_debug
+travis_qmake_gcc_cpp98_debug_gcov
