@@ -3,10 +3,10 @@ language: cpp
 compiler: gcc
 before_install: sudo pip install codecov
 script: 
-  - ./build_release.sh
-  - ./travis_qmake_gcc_cpp98_debug_gcov  
-  - ./clean.sh
   - ./build_debug.sh
   - ./travis_qmake_gcc_cpp98_debug_gcov_debug  
-  - ./get_codecov.sh
+  - ./get_code_cov.sh
   - codecov
+  - ./clean.sh
+  - ./build_release.sh
+  - ./travis_qmake_gcc_cpp98_debug_gcov  
