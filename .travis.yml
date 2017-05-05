@@ -5,11 +5,11 @@ dist: trusty
 before_install: sudo pip install codecov
 script: 
   - qmake travis_qmake_gcc_cpp98_debug_gcov_debug.pro
-  - make debug
+  - make
   - ./travis_qmake_gcc_cpp98_debug_gcov_debug  
   - ./get_code_cov.sh
   - codecov
   - ./clean.sh
   - qmake travis_qmake_gcc_cpp98_debug_gcov.pro  
-  - make release
+  - make
   - ./travis_qmake_gcc_cpp98_debug_gcov  
