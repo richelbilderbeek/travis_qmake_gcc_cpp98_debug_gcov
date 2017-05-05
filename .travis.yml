@@ -9,7 +9,7 @@ script:
   - ./travis_qmake_gcc_cpp98_debug_gcov_debug  
   - ./get_code_cov.sh
   - codecov
-  - ./clean.sh
+  - make clean
   - qmake travis_qmake_gcc_cpp98_debug_gcov.pro  
   - make
   - ./travis_qmake_gcc_cpp98_debug_gcov  
